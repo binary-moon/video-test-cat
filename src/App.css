@@ -162,6 +162,63 @@ video:focus {
   border: 1px solid #ddd;
 }
 
+/* Codec Support Styles */
+.codec-support {
+  margin-left: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.codec-probably {
+  background: #d4edda;
+  color: #155724;
+}
+
+.codec-maybe {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.codec-no,
+.codec- {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* Track Information Styles */
+.track-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.track-item {
+  background: #f8f9fa;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border-left: 4px solid #646cff;
+}
+
+.track-item strong {
+  color: #333;
+}
+
+.track-item small {
+  color: #666;
+  line-height: 1.4;
+}
+
+.no-tracks {
+  color: #888;
+  font-style: italic;
+  text-align: center;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
 @media (min-width: 768px) {
   .diagnostic-grid {
     grid-template-columns: 1fr 1fr;
