@@ -208,7 +208,7 @@ function App() {
       const videoData = await videoRes.json();
       if (!videoRes.ok) throw new Error(videoData.error || 'Failed to get video URL');
 
-      const videoUrl = videoData.videoUrl;
+      const videoUrl = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
 
       // Step 3: Set video src via state
       setSrc(videoUrl);
